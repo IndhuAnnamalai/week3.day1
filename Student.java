@@ -1,33 +1,34 @@
-package week3.day1;
+package org.student;
 
-public class Student {
-	
-	public void getStudentInfo(int studId) {
+import org.department.Department;
+
+public class Student extends Department{
+
+	public void studentName(String Studname) {
 		// TODO Auto-generated method stub
-System.out.println("The student Id is: " + studId);
-	}
-	
-	public void getStudentInfo(int studID, String studName) {
-		// TODO Auto-generated method stub
-		System.out.println("The Student ID is: " + studID);
-		System.out.println("The Student name is: "+ studName);
+		System.out.println("The student name is: " +Studname);
 
 	}
 	
-	public void getStudentInfo(String studEmail, long studPhone) {
-		// TODO Auto-generated method stub
-		System.out.println("The Student Email ID is: "+studEmail);
-		System.out.println("The Student Phone number is: "+studPhone);
-
+	public void studentDepartment(String StudDept) {
+		System.out.println("The student department is: " + StudDept );
 	}
-
+	
+	public void studentId(int ID) {
+		// TODO Auto-generated method stub
+System.out.println("The student ID is: "+ID);
+	}
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		Student stuObj = new Student();
-		stuObj.getStudentInfo(1589);
-		stuObj.getStudentInfo(1589, "Indhu");
-		stuObj.getStudentInfo("indhu.02@gmail.com", 9940134454L);
+		Student sObj = new Student();
+		
+		sObj.collegeCode(121);
+		sObj.collegeName("SSIET");
+		sObj.collegeRank(15);
+		sObj.departmentName("ECE");
+		sObj.studentId(1548);
+		sObj.studentName("Indhu");
+		sObj.studentDepartment("EEE");
+		
 	}
-
 }
